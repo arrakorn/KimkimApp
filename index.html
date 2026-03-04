@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบเช็คชื่อนักเรียน</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>บันทึกการเข้าเรียน</h1>
+        
+        <div class="form-group">
+            <label for="studentId">รหัสนักเรียน:</label>
+            <input type="text" id="studentId" placeholder="กรอกรหัสนักเรียน">
+        </div>
+        
+        <div class="form-group">
+            <label for="studentName">ชื่อ-นามสกุล:</label>
+            <input type="text" id="studentName" placeholder="กรอกชื่อ-นามสกุล">
+        </div>
+        
+        <button id="submitBtn">เช็คชื่อ</button>
+
+        <hr style="margin: 30px 0; border: 0; border-top: 1px solid #eee;">
+
+        <h2>รายชื่อผู้เข้าเรียนล่าสุด</h2>
+        <ul id="attendanceList">
+            </ul>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
