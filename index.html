@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบโหวตสภานักเรียน</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>เลือกตั้งสภานักเรียน 2569</h1>
+            <p>1 สิทธิ์ 1 เสียงของคุณมีค่า เลือกคนที่ใช่ กาเบอร์ที่ชอบ!</p>
+        </header>
+
+        <div class="cards-wrapper">
+            <div class="candidate-card">
+                <div class="number-badge">1</div>
+                <h2>พรรคที่จะล้อม</h2>
+                <p>นโยบาย: พัฒนาระบบสายรัดข้อมืออัจฉริยะ</p>
+                <button onclick="vote('candidate_1')">โหวตเบอร์ 1</button>
+            </div>
+
+            <div class="candidate-card">
+                <div class="number-badge">2</div>
+                <h2>พรรคผ่อนบ้างนะ</h2>
+                <p>นโยบาย: เพิ่มพื้นที่สีเขียวและจุดนั่งพัก</p>
+                <button onclick="vote('candidate_2')">โหวตเบอร์ 2</button>
+            </div>
+        </div>
+
+        <div id="success-message" class="hidden">
+            🎉 โหวตสำเร็จ! ขอบคุณที่ร่วมใช้สิทธิ์ครับ
+        </div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
